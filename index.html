@@ -534,7 +534,7 @@
 
         .contact-content {
             text-align: center;
-            max-width: 600px;
+            max-width: 1050px;
             margin: 0 auto;
         }
 
@@ -559,7 +559,7 @@
             font-weight: 600;
             color: #ffffff;
             text-decoration: none;
-            margin-bottom: 32px;
+            margin-bottom: 40px;
             transition: var(--transition-smoother);
         }
 
@@ -571,6 +571,35 @@
         .contact-phone svg {
             width: 28px;
             height: 28px;
+        }
+
+        .business-card-wrapper {
+            margin: 0 auto 40px;
+            max-width: 1050px;
+            width: 100%;
+        }
+
+        .business-card {
+            width: 100%;
+            max-width: 1050px;
+            height: auto;
+            aspect-ratio: 1050 / 600;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+            transition: var(--transition-smoother);
+        }
+
+        .business-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.5);
+        }
+
+        .business-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
 
         .contact-cta {
@@ -709,6 +738,10 @@
             .footer-logo img {
                 height: 48px;
             }
+
+            .business-card {
+                border-radius: 20px;
+            }
         }
 
         /* Responsive Styles */
@@ -735,6 +768,10 @@
 
             .footer-logo img {
                 height: 36px;
+            }
+
+            .business-card {
+                border-radius: 14px;
             }
         }
 
@@ -820,6 +857,7 @@
 
             .contact-phone {
                 font-size: 1.25rem;
+                margin-bottom: 32px;
             }
 
             .section-header {
@@ -840,6 +878,14 @@
 
             .footer-logo img {
                 height: 32px;
+            }
+
+            .business-card {
+                border-radius: 12px;
+            }
+
+            .business-card-wrapper {
+                margin-bottom: 32px;
             }
         }
 
@@ -882,6 +928,14 @@
 
             .footer-logo img {
                 height: 28px;
+            }
+
+            .business-card {
+                border-radius: 10px;
+            }
+
+            .contact-phone {
+                font-size: 1.125rem;
             }
         }
 
@@ -1126,6 +1180,11 @@
                     </svg>
                     +91 8285300298
                 </a>
+                <div class="business-card-wrapper">
+                    <div class="business-card">
+                        <img src="bus.png" alt="Trooff Edits Business Card" loading="lazy">
+                    </div>
+                </div>
                 <p class="contact-cta">Available for new projects. Let us bring your ideas to life.</p>
             </div>
         </div>
